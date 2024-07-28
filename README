@@ -1,6 +1,12 @@
 Linux kernel
 ============
 
+Build
+$ export PATH=<path to aarch64-linux-android-4.9/bin>:$PATH
+$ make O=out ARCH=arm64 CC=clang CLANG_TRIPLE=aarch64-linux-gnu- CROSS_COMPILE=aarch64-linux-android- LLVM=1 LLVM_IAS=1 begonia_user_defconfig
+W: Add line CONFIG_88XXAU=y to out/.config
+$ make O=out ARCH=arm64 CC=clang CLANG_TRIPLE=aarch64-linux-gnu- CROSS_COMPILE=aarch64-linux-android- LLVM=1 LLVM_IAS=1 -j$(nproc)
+
 This file was moved to Documentation/admin-guide/README.rst
 
 Please notice that there are several guides for kernel developers and users.
