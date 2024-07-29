@@ -1,0 +1,4 @@
+[submodule "KernelSU-0.9.5"]
+	path = KernelSU-0.9.5
+	url = https://github.com/tiann/KernelSU
+	branch = v0.9.5
